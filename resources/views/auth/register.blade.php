@@ -1,6 +1,51 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="{{ config('app.locale') }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@section('content')
+    <title>{{ config('app.name') }}</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/materialize.css') }}" rel="stylesheet">
+    <style>
+        body{
+            background:#e0e0e0;
+
+            overflow:hidden;
+        }
+        .cont-login{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            height:100vh;
+        }
+
+        .block-login{
+            width:350px;
+            background:#fff;
+            padding:20px;
+            border-radius:10px;
+        }
+        .input-field{
+            margin:0px;
+        }
+        .checkbox{
+            padding:10px 0px;
+        }
+
+        .cont-options{
+            padding:10px 0px;
+        }
+
+    </style>
+</head>
+<body>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -73,4 +118,10 @@
         </div>
     </div>
 </div>
-@endsection
+
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/materialize.js') }}"></script>
+</body>
+</html>
+
